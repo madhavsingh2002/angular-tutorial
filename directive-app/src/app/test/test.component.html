@@ -1,0 +1,32 @@
+<p>test works!</p>
+<!-- ngIf -->
+<div *ngIf="true">Display data</div>
+<!-- ngIfElse -->
+<p>ngIfElse example!</p> 
+<div *ngIf="isLogIn; else isLogOut"> 
+   Hello you are logged in 
+</div>
+<ng-template #isLogOut> 
+   You're logged out.. 
+</ng-template>
+<!-- ngFor -->
+<h2>ngFor directive</h2>
+<ul [style]="{'list-style':'none'} " >
+    <li *ngFor="let item of list, let i = index">
+      with their {{i}} - {{item}}
+    </li>
+</ul>
+<!-- ngFor with trackByData() -->
+<ul>
+    <li *ngFor="let std of studentArr; trackBy:trackByData">
+      {{std.id}}  {{std.name}}
+
+    </li>
+</ul>
+<!-- NgSwitch Directive -->
+<h2>ngSwitch directive</h2>
+<ul [ngSwitch]="logInName" >
+    <li *ngSwitchCase="'user' "><p>User is logged in..</p></li>
+    <li *ngSwitchCase="'admin' "><p>Admin is logged in..</p></li>
+    <li *ngSwitchDefault><p>Please choose login nane..</p></li>
+</ul>
