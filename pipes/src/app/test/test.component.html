@@ -2,16 +2,35 @@
     Today's date:- {{presentDate}}
 </div>
 <!-- Add Date Pipe -->
-<h1>Add Date Pipe</h1>
 <div>
+    <h1>Add Date Pipe</h1>
    <p> Today's date:- {{presentDate | date}}</p>
 </div>
 <!-- Parameters in Date -->
-<h1>Parameters in Date</h1>
 <div>
+    <h1>Parameters in Date</h1>
     <p>short date:- {{presentDate |date:'shortDate' }} </p>
     <p>full date:- {{presentDate | date:'fullDate' }} </p>
     <p>Formatted Date:- {{presentDate | date:'dd-mm-yyyy' }} </p>
     <p>Hours and minutes:- {{presentDate | date:'hh:mm-a' }} </p>
     <p></p>
+</div>
+<!-- Chained Pipes -->
+<div>
+    <h1>Chained Pipes</h1>
+    <p>Date with uppercase:-{{presentDate|date:'fullDate'|uppercase }} </p>
+    <p>Date with lowercase:-{{presentDate|date:'fullDate'|lowercase }} </p>
+
+</div>
+<!-- Build-in Pipes -->
+
+<!-- Build-in Pipes | Aysnc -->
+<div>
+    <h1>Build-in Pipes | Async</h1>
+    <p>Seconds changing in Time:{{timeChange |async}} </p>
+</div>
+<!-- Build-in Pipes | Currency  -->
+<div>
+    <h1>Build-in Pipes | Currency</h1>
+    <p>Convert my rupee</p>
 </div>
