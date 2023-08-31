@@ -32,5 +32,12 @@
 <!-- Build-in Pipes | Currency  -->
 <div>
     <h1>Build-in Pipes | Currency</h1>
-    <p>Convert my rupee</p>
+    <p>Convert my rupee {{price |currency:'EUR':true }} </p>
+    <p>Convert my rupee {{price |currency:'INR' }} </p>
+</div>
+<!-- Build-in Pipes | SlicePipe  -->
+<div>
+    <h1>Build-in Pipes | Slice </h1>
+    <p>Start Index:-{{Fruits | slice:0:4 }} </p>
+    <p>Start Index:-{{Fruits | slice:4 }} </p>
 </div>

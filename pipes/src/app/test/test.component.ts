@@ -13,6 +13,8 @@ export class TestComponent implements OnInit {
   timeChange!: Observable<string>;
   // Build-in-Pipes | Currency Pipe
   price:number =20000
+  // Build-in-Pipes | Slice
+  Fruits=['apple', 'orange', 'Grapes','Mongo','Kiwi','Pomegranate']
   ngOnInit() {
     this.timeChange = new Observable<string>((observer: Observer<string>) => {
       setInterval(() => observer.next(new Date().toString()), 1000);
