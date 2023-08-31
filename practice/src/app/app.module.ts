@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ExpensieEntryComponent } from './expensie-entry/expensie-entry.component';
+import { ExpensiveEntryListComponent } from './expensive-entry-list/expensive-entry-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExpensieEntryComponent
+    ExpensieEntryComponent,
+    ExpensiveEntryListComponent
   ],
   imports: [
     BrowserModule
